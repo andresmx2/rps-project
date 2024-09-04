@@ -17,53 +17,7 @@ function getComputerChoice() {
     let r = Math.floor(Math.random() * 3);
     return choices[r];
 }
-/*
-function playGame() {
 
-    let humanScore = 0;
-    let computerScore = 0;
-    let countRound = 0;
-
-    function playRound(humanChoice, computerChoice) {
-
-        if (humanChoice == computerChoice) {
-            console.log('Repeat round');
-            countRound--;
-            return;
-        } else if (humanChoice == 'rock' && computerChoice == 'paper') {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-            computerScore++;
-        } else if (humanChoice == 'paper' && computerChoice == 'scissors') {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-            computerScore++;
-        } else if (humanChoice == 'scissors' && computerChoice == 'rock') {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-            computerScore++;
-        } else {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-            humanScore++;
-        }
-    }
-
-    for (countRound = 0; countRound < 5; countRound++) {
-
-        const humanSelection = getHumanChoice();
-
-        const computerSelection = getComputerChoice();
-
-        playRound(humanSelection, computerSelection);
-    }
-
-    if (humanScore > computerScore)
-        console.log("You win!! congratulations!!");
-    else
-        console.log("You lose!! sorry!!");
-
-    console.log(`Score: You >> ${humanScore}, Computer >> ${computerScore}.`);
-}
-
-playGame();
-*/
 function playRound(humanChoice, computerChoice) {
     let message = '';
     resetScore();
